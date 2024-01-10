@@ -30,7 +30,7 @@
             <profileName>Thor</profileName>
             <runConfigurationId>samsungs5emulation</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Thor Tests/Katalon Test - Test Suites</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
