@@ -17,17 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(null)
-
-WebUI.maximizeWindow()
-
-//Open the URL
-CustomKeywords.'client.Thor.openUrl'()
-
-//Login
-CustomKeywords.'client.Thor.loginToApp'()
-
-
 	List<String> startups = new ArrayList<String>()
 	startups.add('Startup1')
 	startups.add('Startup2')

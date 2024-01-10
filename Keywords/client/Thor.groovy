@@ -68,8 +68,9 @@ public class Thor {
 	//Logs out from Application
 	@Keyword
 	def logoutFromApp() {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/user_Name'), 10)
 		WebUI.click(findTestObject('Object Repository/user_Name'), FailureHandling.STOP_ON_FAILURE)
-		WebUI.delay(1)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/logout_Button'), 10)
 		WebUI.click(findTestObject('Object Repository/logout_Button'), FailureHandling.STOP_ON_FAILURE)
 		WebUI.delay(1)
 	}

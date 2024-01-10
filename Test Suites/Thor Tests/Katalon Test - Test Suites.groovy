@@ -63,12 +63,10 @@ def setupTestCase() {
 /**
  * Run after each test case ends.
  */
-@TearDownTestCase(skipped = true) // Please change skipped to be false to activate this method.
-def tearDownTestCase() {
-	//Open the URL
-	CustomKeywords.'client.Thor.openUrl'()
-	
+@TearDownTestCase(skipped = false) // Please change skipped to be false to activate this method.
+def tearDownTestCase() {	
 	//Login
+	WebUI.delay(3)
 	CustomKeywords.'client.Thor.loginToApp'()
 }
 
