@@ -24,5 +24,14 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Thor Tests/Katalon Test - Test Suites</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Custom</groupName>
+            <profileName>Thor</profileName>
+            <runConfigurationId>samsungs5emulation</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Thor Tests/Katalon Test - Test Suites</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

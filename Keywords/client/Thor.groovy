@@ -16,6 +16,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
@@ -49,6 +50,7 @@ public class Thor {
 		WebUI.delay(1)
 		WebUI.sendKeys(findTestObject('Object Repository/sign_In_With_Mail_Email_Address_Field'), login_username, FailureHandling.STOP_ON_FAILURE)
 		WebUI.sendKeys(findTestObject('Object Repository/sign_In_With_Mail_Password_Field'), login_password, FailureHandling.STOP_ON_FAILURE)
+		WebUI.delay(1)
 		WebUI.click(findTestObject('Object Repository/continue_Button'), FailureHandling.STOP_ON_FAILURE)
 		WebUI.delay(1)
 	}
@@ -68,9 +70,8 @@ public class Thor {
 	//Logs out from Application
 	@Keyword
 	def logoutFromApp() {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/user_Name'), 10)
 		WebUI.click(findTestObject('Object Repository/user_Name'), FailureHandling.STOP_ON_FAILURE)
-		WebUI.waitForElementVisible(findTestObject('Object Repository/logout_Button'), 10)
+		WebUI.delay(1)
 		WebUI.click(findTestObject('Object Repository/logout_Button'), FailureHandling.STOP_ON_FAILURE)
 		WebUI.delay(1)
 	}

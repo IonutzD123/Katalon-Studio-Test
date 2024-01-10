@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>logout_Button</name>
+   <name>welcome_Back_Message</name>
    <tag></tag>
-   <elementGuidId>67df23b6-92ed-4b2d-8e6f-8b392a5d5792</elementGuidId>
+   <elementGuidId>46f1f1b6-1c3e-4fae-9c3e-5ec1363e2b9b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[@class='user-panel--util-links']/*)[3]</value>
+         <value>//*[@class='b24 tight centered-text']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@class='user-panel--util-links']/*)[3]</value>
+      <value>//*[@class='b24 tight centered-text']</value>
    </webElementProperties>
 </WebElementEntity>

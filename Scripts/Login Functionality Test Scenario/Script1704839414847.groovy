@@ -24,5 +24,3 @@ CustomKeywords.'client.Thor.verifyUserName'('Katalon')
 //Second way to verify the successfull login
 WebUI.verifyEqual(WebUI.getText(findTestObject('Object Repository/user_Name'), FailureHandling.STOP_ON_FAILURE), 'Katalon')
 
-//Logout
-CustomKeywords.'client.Thor.logoutFromApp'()

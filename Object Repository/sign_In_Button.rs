@@ -7,16 +7,23 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'topbar-sign-in']</value>
+         <value>//*[@id='topbar-sign-in'] | //*[@class='frontpage-email-login t']/*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>topbar-sign-in</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='topbar-sign-in'] | //*[@class='frontpage-email-login t']/*</value>
    </webElementProperties>
 </WebElementEntity>

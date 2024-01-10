@@ -31,8 +31,24 @@ import com.kms.katalon.core.annotation.TearDownTestCase
 /**
  * Setup test suite environment.
  */
-@SetUp(skipped = false) // Please change skipped to be false to activate this method.
+@SetUp(skipped = true) // Please change skipped to be false to activate this method.
 def setUp() {
+
+}
+
+/**
+ * Clean test suites environment.
+ */
+@TearDown(skipped = false) // Please change skipped to be false to activate this method.
+def tearDown() {
+	WebUI.closeBrowser()
+}
+
+/**
+ * Run before each test case starts.
+ */
+@SetupTestCase(skipped = false) // Please change skipped to be false to activate this method.
+def setupTestCase() {
 	WebUI.openBrowser(null)
 	
 	WebUI.maximizeWindow()
@@ -45,29 +61,12 @@ def setUp() {
 }
 
 /**
- * Clean test suites environment.
- */
-@TearDown(skipped = true) // Please change skipped to be false to activate this method.
-def tearDown() {
-	// Put your code here.
-}
-
-/**
- * Run before each test case starts.
- */
-@SetupTestCase(skipped = true) // Please change skipped to be false to activate this method.
-def setupTestCase() {
-	// Put your code here.
-}
-
-/**
  * Run after each test case ends.
  */
 @TearDownTestCase(skipped = false) // Please change skipped to be false to activate this method.
-def tearDownTestCase() {	
-	//Login
-	WebUI.delay(3)
-	CustomKeywords.'client.Thor.loginToApp'()
+def tearDownTestCase() {
+	//Logout
+	CustomKeywords.'client.Thor.logoutFromApp'()
 }
 
 /**
